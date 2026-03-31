@@ -247,7 +247,7 @@ export function CyberUploadForm({ onUploadSuccess }: CyberUploadFormProps) {
         >
           <p className="font-medium mb-1">处理流程：</p>
           <ol className="space-y-0.5 text-muted-foreground/70">
-            <li>1. 上传素材到火山引擎</li>
+            <li>1. 上传素材到邪修</li>
             <li>2. 引擎后台处理（约 5-30 秒）</li>
             <li>3. 自动激活，可立即使用</li>
           </ol>

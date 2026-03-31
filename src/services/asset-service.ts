@@ -57,7 +57,7 @@ export class AssetService {
   }
 
   /**
-   * 上传图片素材到火山引擎
+   * 上传图片素材到邪修
    */
   async uploadImage(url: string, name: string): Promise<string> {
     const response = await fetch(`${VOLCANO_API_BASE}/create`, {
@@ -79,7 +79,7 @@ export class AssetService {
   }
 
   /**
-   * 上传多媒体素材到火山引擎
+   * 上传多媒体素材到邪修
    */
   async uploadMedia(url: string, name: string, assetType: 'Image' | 'Video' | 'Audio'): Promise<string> {
     const response = await fetch(`${VOLCANO_API_BASE}/createMedia`, {
@@ -101,7 +101,7 @@ export class AssetService {
   }
 
   /**
-   * 查询火山引擎素材状态
+   * 查询邪修素材状态
    */
   async queryAssetStatus(assetId: string): Promise<AssetQueryResponse['Result']> {
     const response = await fetch(`${VOLCANO_API_BASE}/get?id=${assetId}`, {
@@ -204,7 +204,7 @@ export class AssetService {
   }
 
   /**
-   * 同步素材状态（从火山引擎查询并更新本地）
+   * 同步素材状态（从邪修查询并更新本地）
    */
   async syncAssetStatus(id: string): Promise<Asset> {
     const localAsset = await this.getLocalAsset(id);
