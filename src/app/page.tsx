@@ -66,7 +66,7 @@ export default function Home() {
             transition={{ delay: 0.3 }}
             className="flex flex-col items-center gap-3 text-4xl md:text-5xl font-bold mb-4 tracking-tight"
           >
-            <span className="neon-text">火山虚拟人</span>
+            <span className="neon-text">邪修虚拟人</span>
             <span className="text-foreground text-3xl md:text-4xl font-medium">素材管理系统</span>
           </motion.h1>
 

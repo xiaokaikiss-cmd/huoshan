@@ -4,12 +4,12 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: '火山虚拟人素材管理',
-    template: '%s | 火山虚拟人',
+    default: '邪修虚拟人素材管理',
+    template: '%s | 邪修虚拟人',
   },
   description: '上传和管理虚拟人素材，支持图片、视频和音频的智能管理平台',
   keywords: [
-    '火山引擎',
+    '邪修',
     '虚拟人',
     '素材管理',
     'AI素材',
