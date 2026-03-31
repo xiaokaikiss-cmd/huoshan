@@ -12,7 +12,7 @@ export const assets = pgTable(
   "assets",
   {
     id: varchar("id", { length: 36 }).primaryKey().default(sql`gen_random_uuid()`),
-    asset_id: varchar("asset_id", { length: 100 }).notNull(), // 邪修返回的资产ID
+    asset_id: varchar("asset_id", { length: 100 }).notNull(), // 火山引擎返回的资产ID
     name: varchar("name", { length: 255 }).notNull(), // 素材名称
     url: text("url").notNull(), // 素材URL
     asset_type: varchar("asset_type", { length: 20 }).notNull(), // Image/Video/Audio

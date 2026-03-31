@@ -204,7 +204,7 @@ export class AssetService {
   }
 
   /**
-   * 同步素材状态（从邪修查询并更新本地）
+   * 同步素材状态（从火山引擎查询并更新本地）
    */
   async syncAssetStatus(id: string): Promise<Asset> {
     const localAsset = await this.getLocalAsset(id);

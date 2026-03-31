@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 上传到邪修
+    // 上传到火山引擎
     let assetId: string;
     if (assetType === 'Image') {
       assetId = await assetService.uploadImage(url, name);
